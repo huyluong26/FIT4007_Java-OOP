@@ -1,0 +1,21 @@
+public class HomeWork1 {
+
+
+    public static void main(String[] args) {
+        String str1 = "Dai hoc";
+        String str2 = "Dai Nam";
+        String result = str1 + " " + str2;
+        int upperCount = 0;
+
+        for(int i = 0; i < result.length(); ++i) {
+            char ch = result.charAt(i);
+            if (Character.isUpperCase(ch)) {
+                ++upperCount;
+            }
+        }
+
+        System.out.println("Chuỗi kết quả: " + result);
+        System.out.println("Số lượng chữ in hoa: " + upperCount);
+        System.out.println("Chiều dài của chuỗi là: " + result.length());
+    }
+}
